@@ -1,7 +1,8 @@
 import React from 'react';
 
-function SolarSystem() {
-  return <div data-testid="solar-system" />;
+function SolarSystem(prop) {
+  const { children } = prop;
+  return <div data-testid="solar-system">{children}</div>;
 }
 
 export default SolarSystem;
